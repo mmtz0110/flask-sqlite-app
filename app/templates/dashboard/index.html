@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Dashboard Stuntfree</h1>
+<p>Selamat datang, {{ session.get("user_name", "pengguna") }}.</p>
+<a href="{{ url_for('children.index') }}">Data anak</a>
+<a href="{{ url_for('auth.logout') }}">Keluar</a>
+{% endblock %}

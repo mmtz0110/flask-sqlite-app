@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Registrasi</h1>
+<form method="post">
+<input name="nama" required placeholder="Nama lengkap">
+<input name="email" type="email" required placeholder="Email">
+<input name="password" type="password" required placeholder="Password">
+<input name="phone" required placeholder="Nomor telepon">
+<select name="role"><option value="orang_tua">Orang tua</option></select>
+<button type="submit">Daftar</button>
+</form>
+{% endblock %}

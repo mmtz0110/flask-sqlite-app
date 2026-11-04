@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Login</h1>
+<form method="post">
+<input name="email" type="email" required placeholder="Email">
+<input name="password" type="password" required placeholder="Password">
+<button type="submit">Masuk</button>
+</form>
+<a href="{{ url_for('auth.register') }}">Daftar</a>
+{% endblock %}

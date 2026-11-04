@@ -1,3 +1,22 @@
+cat << 'EOF' > .gitignore
+# Virtual Environment
 venv/
+env/
+
+# Environment Variables (Kredensial & API Key)
+.env
+
+# Python Cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Database lokal / temporary (jika ada)
+*.db
+*.sqlite3
+
+# IDE / Editor Settings
+.vscode/
+.idea/
+EOF

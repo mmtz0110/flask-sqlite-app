@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Data Anak</h1>
+{% for child in children %}<p>{{ child.nama_anak }}</p>{% else %}<p>Belum ada data anak.</p>{% endfor %}
+{% endblock %}
